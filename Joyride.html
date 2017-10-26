@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>J O Y R I D E</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="common.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div id="racer">
+
+        <canvas id="canvas">
+            Sorry, the game cannot be run because your browser does not support the &lt;canvas&gt; element
+        </canvas>
+
+        Loading...
+    </div>
+    <div id="instructions">
+        <p>Use the <b>arrow keys</b> or <b>WSAD keys</b> to drive the car.</p>
+    </div>
+    <audio id='music'>
+        <source src="music/passingBreeze.ogg">
+        <source src="music/passingBreeze.mp3">
+    </audio>
+    <span id="mute"></span>
+
+    <script src="DomObject.js"></script>
+    <script src="GlobalVars.js"></script>
+    <script src="Updater.js"></script>
+    <script src="Utility.js"></script>
+    <script src="Game.js"></script>
+    <script src="RoadBuilder.js"></script>
+    <script src="Renderer.js"></script>
+    <script src="RequestAnimationFrameSync.js"></script>
+    <script>Game.run();</script>
+
+
+</body>
+</html>
